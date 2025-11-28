@@ -1,0 +1,124 @@
+<!-- Versi HTML sudah dibersihkan dari nama 'Afi', diganti 'Saep', dan seluruh teks diarahkan ke bahasa Indonesia. -->
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>For You Saep!</title>
+    <link rel="icon" href="💌" />
+    <!-- CSS tetap sama, hanya judul/teks nanti diganti di body -->
+    <!-- ... (tempat CSS penuh kamu bisa tempel ulang atau minta aku gabungkan sekalian) ... -->
+</head>
+<body>
+
+<!-- Kamu boleh lanjutkan paste CSS/JS di sini, tinggal edit bagian teks yang aku akan bantu nanti -->
+
+<style>
+body{
+        margin:0;
+        min-height:100vh;
+        display:flex;
+        align-items: flex-start;
+        justify-content:center;
+        font-family: 'Poppins', 'Comic Sans MS', system-ui, sans-serif;
+        background: radial-gradient(circle at 10% 10%, #f6bedb, var(--bg));
+        color:var(--text);
+        overflow-x: hidden; 
+        overflow-y: auto;
+    }
+
+    .app{
+        width: 100%;
+        min-height: 100vh;
+        max-width: 1000px; 
+        background: linear-gradient(180deg, rgba(255, 240, 245, 0.9), var(--card));
+        padding:30px 24px; 
+        position:relative;
+    }
+
+    header{display:flex;align-items:center;gap:14px}
+    @keyframes heartBeat{
+        0%, 100% {transform: scale(1); opacity:1}
+        25% {transform: scale(1.1); opacity:0.9}
+        50% {transform: scale(1); opacity:1}
+        75% {transform: scale(1.1); opacity:0.9}
+    }
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(180deg,var(--pink),#ff9cc3);display:flex;align-items:center;justify-content:center;color:white;font-weight:700; animation: heartBeat 2s infinite ease-in-out;}
+    h1{font-size:20px;margin:0}
+    p.lead{margin:6px 0 18px;color:#a43a66}
+
+    .page{
+        display:none;
+        transition: opacity 0.4s ease-in-out; 
+        opacity: 0;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+    .page.active{
+        display:block;
+        opacity: 1;
+    }
+
+    #envelope {
+        width: 100%;
+        max-width: 320px;
+        background: #fff0f6;
+        border: 2px solid var(--pink);
+        border-radius: 12px;
+        padding: 40px 20px;
+        text-align: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        cursor: pointer;
+        margin: 100px auto 0;
+        position: relative;
+        transform-origin: center;
+        transition: all 0.7s ease-in-out; 
+    }
+    .envelope-icon {
+        font-size: 70px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    .envelope-open-text {
+        color: var(--text);
+        font-weight: 500;
+    }
+
+    .center{display:flex;flex-direction:column;align-items:center;gap:12px}
+
+    button{background:var(--soft);border:none;padding:10px 14px;border-radius:12px;font-size:15px;cursor:pointer;box-shadow:0 6px 14px rgba(0,0,0,0.08); transition: all 0.2s ease}
+    button.primary{background:linear-gradient(180deg,var(--pink),#e692af);color:#fff}
+    button.primary:hover{transform: translateY(-2px); box-shadow: 0 10px 20px var(--shadow-pink);}
+    button:hover:not(.primary){background: #fff; box-shadow: 0 4px 8px var(--shadow-pink);}
+
+    .row{
+        display:flex;
+        gap:12px;
+        flex-wrap:wrap;
+        justify-content:center;
+        position: relative; 
+        min-height: 80px; 
+    }
+    
+    #homeNo {
+        transition: all 0.3s ease-out; 
+        position: relative;
+        z-index: 10;
+    }
+
+    @keyframes float {
+        0% { transform: translate(0, 0px) scale(1.1); }
+        50% { transform: translate(10px, -10px) scale(1.1); }
+        100% { transform: translate(0, 0px) scale(1.1); }
+    }
+    .cat-doodle{
+        position:absolute;
+        right:16px;
+        bottom:8px;
+        opacity:0.2; 
+        animation: float 4s ease-in-out infinite;
+    }
+    .left-cat {
+</style>
+</body>
+</html>
